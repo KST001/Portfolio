@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name="description" content="portfolio website"/>
+	<!-- Link to External CSS file (style.css)-->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Internal CSS of BLog page -->
+	<style type="text/css">
+
+		.h1Style
+		{
+			color: black;
+			font-size: 30px;
+			padding: 20px;
+			text-align: center;
+			font-family: cursive;
+		}
+		.h3Style
+		{
+			
+			font-size: 25px;
+			padding: 20px 50px;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-style: bold;
+			text-align: center;
+		}
+		.slider 
+		{
+      		width: 90%;
+      		height: 650px;
+      		margin: 20px auto;
+    		box-sizing: border-box;
+      		overflow: hidden;
+      		box-shadow: 5px 5px 10px grey;
+    	}
+   			
+		.pstyle
+		{
+			font-family: cursive;
+			font-size: 15px;
+			color: white;
+			margin: 10px;
+			text-align: justify;
+		}
+		.hr{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 100%; background-color: white;background-size: 100% 100%;"> <!--Inline CSS-->
+			<nav class="topNav">
+				<!-- navigation bar /-->
+				<!-- creating table-->
+				<table style="margin:auto;height: 20px"> <!--Inline CSS-->
+					<tr>
+						<th>
+							<a  href="../index.html">Home</a>
+						</th>
+						<th>
+							<a href="cv.html">CV</a>
+						</th>
+						<th>
+							<a class="active" href="blog.html">Blog</a>
+						</th>
+						<th>
+							<a href="research.html">Research</a>
+						</th>
+						<th>
+							<a href="ContactUS.html">Contact</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		<div style="background-color: whitesmoke; width: 100%"><!--Inline CSS-->
+			<section>
+				<h3 class="h3Style" style="color: black;">Effects of Internet Technology</h3> <!--Inline CSS-->
+			</section>
+		</div>
+		<!--creating image slider using java script-->
+			<div class="slider">
+			<div>
+				<img src="../images/khem5.jpg" width="100%"  id="img" >
+			</div>
+    	</div>
+		<!-- using Internal javascript -->
+		<!-- images silder -->
+    	<script>
+    		var images = ['../images/khem1.jpg', '../images/khem2.jpg', '../images/khem3.jpg', '../images/khem4.jpg', '../images/khem5.jpg'];
+    		var x = 0;
+    		function slider() {
+    			document.getElementById("img").src=images[x];
+
+    			if (x < (images.length-1)) {
+    				x = x + 1;
+    			}else {
+    				x = 0;
+    			}
+    		}
+    		setInterval(slider, 3000);
+    	</script>
+
+    	<div class="hr"><!-- horizontal line -->
+
+    	<div class="content" style="width: 50%; color: black; float: left; margin-left: 4px; background-color: #363e4a;"> <!--Inline CSS-->
+    		<h3 class="h3Style">Introduction</h3>
+    		<p class="pstyle">Technology, the application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment.Technology can be defined as the sum of various things like techniques, skills, methods and processes that is used in the production of various goods and services. technology is a strong tool for transform learning.The term technology was uncommon for people in English before 20th century. Technology can be described as an activity that changes the culture or generetion. In present era, Technology and Science are integrated terms. Technology is developed with the knowledge of scientists and then technology is used to develop science.</p>
+ 		</div>
+
+ 		<div class="content" style="width: 50%; margin-left: 4px; background-color: #363e4a;"> <!--Inline CSS-->
+ 		<h3 class="h3Style">Social Impacts</h3>
+ 			<p class="pstyle">Internet is the collection of millions of websites. Our society is completly dependent on the internet technology. People are more concern on the technology day by daysThere are various positive and negative impacts of internet technology. Our life also gets affected by technology in two ways which are positive and negative. Some of the positive impacts are disscussed here. The main positive impact of the internet technology in our life is that we can do any sort of work sitting at any place. Students can learn various topics online, people can do online business and organizations can do various research on promoting products online. The GPS technology has been guiding various times to locate the location.   </p>
+ 		</div>
+
+ 		<div class="content" style="width: 50%; margin-left: 4px; background-color: #363e4a;"> <!--Inline CSS-->
+			<h3 class="h3Style">Conclusion</h3>
+ 			<p class="pstyle">Techonlogies are not harmful to the society but due the misuse of technology it is harmful for others people. With the help of internet technologies people are getting employed. People are mostly attracted by robots, now scientits are trying to develop the emotions on the robots. There are various chances of losing the privacy on the internet technology. People needs to learn the proper use of technology on the present era.</p><br> <br>
+ 		</div>
+</div>	
+
+		<div style="width: 100%">
+			<!--Creating footer for the page-->
+			<footer style="padding-top: 15px;background-color: #16191d; text-align: center; color: #ffffff; height: 50px;"> 
+				<p class="copy">&copy; 2021 Khem Raj Singh Thakuri</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

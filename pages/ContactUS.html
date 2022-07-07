@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact US</title>
+	<meta name="description" content="portfolio website"/>
+	<!-- Link to External CSS file (style.css)-->
+	<script type= "text/javascript" src="../javascript/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Internal CSS of contactus page-->
+	<style type="text/css">
+
+		.div1
+		{
+			width: 100%;
+         	height: 650px;
+      		background-color: white; 
+		}
+
+		.pstyle
+		{
+			font-size: 20px;
+			color: black;
+			margin: 20px 10px;
+			font-family: arial;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 100%;height: 1300px; background-image: url('../images/v.png');background-size: 100% 100%;"><!--Inline CSS-->
+			<nav class="topNav">
+				<!-- navigation bar /-->
+				<!-- creating table /-->
+				<table style="margin:auto;height: 20px">
+					<tr>
+						<th>
+							<a href="../index.html">Home</a>
+						</th>
+						<th>
+							<a href="cv.html">CV</a>
+						</th>
+						<th>
+							<a href="blog.html">Blog</a>
+						</th>
+						<th>
+							<a href="research.html">Research</a>
+						</th>
+						<th>
+							<a class="active" href="ContactUS.html">Contact</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+
+		<div class="div1" style="margin-bottom: 10px; margin-top: 30px;"> <!--Inline CSS-->
+			<h2 align ="center">Contactme</h2>
+			<!--creating the form --> 
+			<form class="pstyle" name="messageForm" onsubmit="validateForm()">
+				<p class="pstyle">First Name:
+					<input style="margin-left: 50px;"type="text" name="firstname"></p>
+				<p class="pstyle">Last Name:
+					<input style="margin-left: 50px;"type="text" name="lastname"></p>
+				<p class="pstyle">Email:
+					<input style="margin-left: 92px;"type="email" name="email"></p>
+				<p class="pstyle">Phone:
+					<input style="margin-left: 84px;"type="phone" name="phone"></p>
+				<p class="pstyle">Address:
+				<input style="margin-left: 70px;"type="address" name="address"></p>	
+				<p class="pstyle">Gender:
+					<input style="margin-left: 72px;"type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female </p>  
+				<p class="pstyle">Message <br>
+					<textarea name="message" rows="15" cols="40" placeholder="Enter Message"></textarea></p>
+					<input  type="submit" value="Send">
+			</form>
+	  	</div>
+		  <!-- using internal javascript -->
+	  
+
+	<a href="https://www.google.com/maps/@27.7082219,85.3244366,17z" target="_blank" title="Click on it">
+		<h2 style="color: #660033; text-align:center">Location</h2><br> <!--Inline CSS-->
+		<div style="width: 100%;height: 500px;background-color: white; text-align:center"> <!--Inline CSS-->
+			<figure>
+				<img src="../images/map.png">
+			</figure>
+			
+		</div>
+	</a>
+
+	<div style="width: 100%">
+		<!--Creating footer for the page-->
+		<footer style="padding-top: 15px;background-color: #16191d; text-align: center; color: #ffffff;  height: 50px;"> <!--Inline CSS-->
+			<p class="copy">&copy; 2021 Khem Raj Singh Thakuri</p>
+		</footer>
+	</div>
+</div>
+
+</body>
+</html>

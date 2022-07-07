@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!--meta tag to provide meta data of the html document-->
+	<meta name="description" content="portfolio website"/>
+	<!-- Link to External CSS file (style.css)-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Internal CSS of Index page-->
+	<style type="text/css">
+		section{
+			text-align: center;
+		}
+		.pStyle
+		{
+			text-align: center;
+			font-family: cursive;
+			font-size: 20px;
+			color: #ffffff;
+			margin: 10px
+		}
+		
+		.h1style
+		{
+			color: black;
+			font-size: 60px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-family: 'Courier New', Courier, monospace;
+		}
+		.h3style
+		{
+			padding-top: 30px;
+			color: black;
+			font-size: 30px;
+			text-align: center;
+			font-family: 'Courier New', Courier, monospace;
+		}
+		.h2Style
+		{
+			text-decoration: underline;
+			font-style: bold;
+			font-size: 30px;
+			text-align: center;
+			padding: 20px 50px;
+			color: white;
+			font-family: monospace;
+		}
+
+		.divStyle1
+		{
+			margin: 20px;
+			width:30%; 
+	 		height:280px;
+			background-color:#17252A; 
+			border: 2px solid;
+			border-color: #2B7A78;
+			transition: transform .2s;
+		}
+
+		.divStyle1:hover
+		{
+			transform: scale(1.1);
+			box-shadow:5px 5px 5px 5px black;
+		}	
+
+	</style>
+</head>
+<body>
+
+	<div style="width: 100%;height: 850px;background-size: 100% 100%;"> <!--Inline CSS-->
+		<!--creating header for this content-->
+		<header>
+			<nav class="topNav">
+				<!-- navigation bar -->
+				<!-- creating table -->
+				<table style="height: 20px">
+					<tr>
+						<th>
+							<a class="active" href="index.html">Home</a>
+						</th>
+						<th>
+							<a href="pages/cv.html">CV</a>
+						</th>
+						<th>
+							<a href="pages/blog.html">Blog</a>
+						</th>
+						<th>
+							<a href="pages/research.html">Research</a>
+						</th>
+						<th>
+							<a href="pages/ContactUS.html">Contact</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		</header>
+
+		<h3 class="h3style">Hello,</h3><h1 class="h1style">I'm Khem Raj!</h1>
+
+		<a href="pages/cv.html" title="Click">
+			<div class="divStyle1" style="float: left; margin-left: 220px"> <!--Inline CSS-->
+				<h2 class="h2Style">CV</h2>
+				<p class="pStyle">This page contains my personal details, education, hard and soft skills.</p>
+			</div>
+		</a>
+
+		<a href="pages/blog.html" title="Click">
+			<div class="divStyle1" style="float: right; margin-right: 220px;"> <!--Inline CSS-->
+				<h2 class="h2Style">Blog</h2>
+				<p class="pStyle">This page contains a blog which explains and discusses about the impact of internet and technology in my day to day life.</p>
+			</div>
+		</a>
+		
+		<a href="pages/research.html" title="Click">
+			<div class="divStyle1" style="float: left; margin-left: 220px;"> <!--Inline CSS-->
+				<h2 class="h2Style">Research</h2>
+				<p class="pStyle">This page contains all the research i had done from looking at different webpages and comparison of my webpage wih theirs</p>
+			</div>
+		</a>
+
+		<a href="pages/contact_at.html" title="Click">
+			<div class="divStyle1" style="float: right; margin-right: 220px;"> <!--Inline CSS-->
+				<h2 class="h2Style">Contact</h2>
+				<p class="pStyle">This page contains the contact details to contact me and a feedback form for feedback</p>
+			</div>
+		</a>
+	</div>
+
+	<div style="width: 100%">
+		<!--Creating footer for the page-->
+		<footer style="padding-top: 15px;background-color: #16191d; text-align: center; color: #ffffff; height: 50px;">
+			<p class="copy">&copy; 2021 Khem Raj Singh Thakuri</p>
+		</footer>
+	</div>
+
+</body>
+</html>
